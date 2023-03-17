@@ -1,0 +1,327 @@
+:root {
+    /* Colors */
+    --background-color: #f5f3ef;
+    --card-color: #ffffff;
+    --accent-color: #FEBD2F;
+    --text-primary-color: #000000;
+    --text-secondary-color: #646464;
+    --outline-color: #DCDCDC;
+    
+  
+    /* Font */
+    --primary-font-family: 'Roboto', sans-serif;
+    
+
+    /* Font-Sizes */
+    --sixtyfour-pixel-font-size: 4rem;
+    --fourty-eight-pixel-size: 3rem;
+    --fourty-pixel-font-size: 2.5rem;
+    --thirtysix-pixel-font-size: 2.25rem;
+    --twentyfour-pixel-font-size: 1.5rem;
+    --twenty-pixel-font-size: 1.25rem;
+    --eighteen-pixel-font-size: 1.125rem;
+    --sixteen-pixel-font-size: 1rem;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+   }
+   
+   p, a {
+     font-family:'Roboto', sans-serif;
+   }
+
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--background-color);
+
+  }
+
+  /* Header Starts */
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+  }
+
+  .nav-links-container {
+    display: none;
+  }
+  
+  .get-started-link {
+    display: none;
+    text-decoration: none;
+    color: var(--card-color);
+    background-color: var(--text-primary-color);
+    border: 1px solid var(--text-primary-color);
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-links-container a {
+    padding-right: 1rem;
+    text-decoration: none;
+    color: var(--text-primary-color);
+    font-size: 1rem;
+  }
+
+  .sitename-container {
+    text-align: center;
+    line-height: 3px;
+  }
+  
+  .sitename-container > :nth-child(1) {
+    font-size: var(--eighteen-pixel-font-size);
+    font-weight: 700;
+  }
+
+  .sitename-container > :nth-child(2) {
+    font-size: 0.75rem;
+  }
+
+  /* Header Ends */
+
+
+  /* Main Starts */
+  main {
+    padding: 0rem 2rem;
+  }
+
+  .introduction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0rem 0.5rem 0rem;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: var(--thirtysix-pixel-font-size);
+    line-height: 42px;
+  }
+
+  .intro-paragraph {
+    text-align: center;
+    font-size: var(--eighteen-pixel-font-size);
+    color: var(--text-secondary-color);
+    line-height: 24px;
+    padding: 0rem 0rem 1rem 0rem;
+  }
+
+  .intro-img {
+    object-fit: cover;
+    width: 342px;
+    height: 220px;
+    border-radius: 24px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+    "card-orange"
+    "card-one"
+    "card-two"
+    "card-three"
+    "card-four"
+    "card-five";
+    gap: 2rem 2rem;
+    margin: 2rem 0rem;
+  }
+
+  .card-orange {
+    background-color: var(--accent-color);
+    border-radius: 24px;
+    height: 8.25rem;
+    width: 100%;
+    padding: 0.25rem 0.75rem;
+  }
+
+  .orange-card-text {
+    font-size: var(--twentyfour-pixel-font-size);
+    line-height: 28px;
+    grid-area: card-orange;
+  }
+
+  .card-one {
+    background-color: var(--card-color);
+    border-radius: 24px;
+    height: 15.4375rem;
+    width: 100%;
+    padding: 0.25rem 0.75rem;
+    grid-area: card-one;
+    position: relative;
+  }
+
+  .card-two {
+    background-color: var(--card-color);
+    border-radius: 24px;
+    height: 15.4375rem;
+    width: 100%;
+    padding: 0.25rem 0.75rem;
+    grid-area: card-two;
+    position: relative;
+  }
+
+  .card-three {
+    background-color: var(--card-color);
+    border-radius: 24px;
+    height: 15.4375rem;
+    width: 100%;
+    padding: 0.25rem 0.75rem;
+    grid-area: card-three;
+    position: relative;
+  }
+  
+  .card-four {
+    background-color: var(--card-color);
+    border-radius: 24px;
+    height: 15.4375rem;
+    width: 100%;
+    padding: 0.25rem 0.75rem;
+    grid-area: card-four;
+    position: relative;
+  }
+
+  .card-five {
+    background-color: var(--card-color);
+    border-radius: 24px;
+    height: 15.4375rem;
+    width: 100%;
+    padding: 0.25rem 0.75rem;
+    grid-area: card-five;
+    position: relative;
+  }
+
+
+  h2 {
+    font-size: var(--twenty-pixel-font-size);
+    font-weight: 800;
+  }
+
+  .card-text {
+    color: var(--text-secondary-color);
+    padding: 0rem 0.5rem 1rem 0rem;
+    line-height: 24px;
+    font-size: var(--sixteen-pixel-font-size);
+  }
+
+  .card-icon {
+    position: absolute;
+    top: -25px;
+    left: 270px;
+    width: 3.25rem;
+    height: 2.9375rem;
+  }
+
+  .get-started-btn {
+    background-color: var(--card-color);
+    border: 1px solid var(--outline-color);
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+  }
+  /* Main Ends */
+
+
+  /* Footer Begins */ 
+  .footer-container {
+   background-color: var(--accent-color);
+   padding: 1rem 0rem;
+   text-align: center;
+   line-height: 1px;
+  }
+  /* Footer Ends */
+
+
+
+  @media only screen and (min-width: 768px) {
+    h1 {
+        font-size: var(--fourty-eight-pixel-size);
+        line-height: 56px;
+        padding: 0rem 4rem;
+    }
+    
+    .nav-links-container {
+        display: block;
+    }
+    
+    .get-started-link {
+        display: block;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+    
+    
+    .introduction-container {
+        padding: 2rem 0rem 2rem 0rem;
+    }
+
+    .intro-paragraph {
+        font-size: var(--twenty-pixel-font-size);
+        line-height: 32px;
+        padding: 0rem 3rem 3rem 3rem;
+    }
+
+    .intro-img {
+        width: 688px;
+        height: 360px;
+    }
+
+    .grid-container {
+        grid-template-areas: 
+        "card-orange card-one"
+        "card-two card-three"
+        "card-four card-five";
+        gap: 5rem 3rem;
+    }    
+
+    .card-orange {
+        height: 15.4375rem;
+    }
+
+    .card-text {
+        color: var(--text-secondary-color);
+        padding: 0rem 2.5rem 1rem 0rem;
+    }
+    
+    
+  }
+
+  @media only screen and (min-width: 992px) {
+    .introduction-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-right: 1rem;
+      }
+
+    h1 {
+        text-align: flex-start;
+        padding: 0rem 1rem 0rem 0rem;
+    }
+    
+    .intro-paragraph {
+        text-align: flex-start;
+        padding: 0rem 1rem 0rem 0rem;
+    }
+
+    .grid-container {
+        grid-template-areas: 
+        "card-orange card-one card-two"
+        "card-three card-four card-five";
+      }    
+
+      .orange-card-text {
+        font-size: var(--fourty-pixel-font-size);
+        font-weight: 700;
+      }
+  }
