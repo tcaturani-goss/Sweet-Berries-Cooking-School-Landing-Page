@@ -1,3 +1,4 @@
+/* Beautiful work on using CSS variables! This is very organized! */
 :root {
     /* Colors */
     --background-color: #f5f3ef;
@@ -23,6 +24,8 @@
     --sixteen-pixel-font-size: 1rem;
   }
   
+  /* There are 2 fonts in the Figma design.
+  Your project is missing Roboto Serif font. */
   h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
    }
@@ -43,7 +46,12 @@
 
   }
 
+  /* You have used CSS Grid and Flexbox in your project however you haven’t used them together properly.
+  
+  The proper way to use them together would be to make the main layout a CSS Grid layout that would have the navbar, banner, card-container, and footer as grid items. */
+
   /* Header Starts */
+  /* Nice work on using Flexbox properly to create some of the components. */
   .header-container {
     display: flex;
     justify-content: space-between;
@@ -121,6 +129,12 @@
     height: 220px;
     border-radius: 24px;
   }
+
+/* You have used Grid template areas in your project however you used it for your card-container.
+
+The card container is one of the places where you shouldn’t use grid template areas because in a real world scenario, you would get the cards from an API or backend and you wouldn’t know how many cards we would have to position them with grid-template-areas. It would be best to just define the grid-template-columns and let grid handle the number of rows it makes.
+
+You can use the grid template areas for the main layout where you can define where each section should be located such as the navbar, banner, card-container, footer */
 
   .grid-container {
     display: grid;
@@ -212,6 +226,7 @@
     font-size: var(--sixteen-pixel-font-size);
   }
 
+  /* Great work on correctly using absolute and relative positioning for the icons! */
   .card-icon {
     position: absolute;
     top: -25px;
@@ -239,6 +254,8 @@
   /* Footer Ends */
 
 
+/* Good job on hiding the regular navbar and showing the hamburger icon on smaller screen sizes.
+The hamburger menu is not functional. */
 
   @media only screen and (min-width: 768px) {
     h1 {
@@ -305,11 +322,13 @@
       }
 
     h1 {
+      /* flex-start is not a value for text-align. You can use start instead. */
         text-align: flex-start;
         padding: 0rem 1rem 0rem 0rem;
     }
     
     .intro-paragraph {
+      /* flex-start is not a value for text-align. You can use start instead. */
         text-align: flex-start;
         padding: 0rem 1rem 0rem 0rem;
     }
